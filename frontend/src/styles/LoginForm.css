@@ -1,0 +1,152 @@
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.login-form {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333333;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 8px;
+    text-align: center;
+    background-color: #fff3f3; 
+    padding: 10px;
+    border: 1px solid #ffcccc; 
+    border-radius: 4px; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 70%;
+    font-weight: normal;
+    z-index: 1000;
+}
+
+.close-error-button {
+    font-size: 10px;
+    background-color: #f5f5f5; 
+    color: #474747; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 5px;
+  }
+  
+.close-error-button:hover {
+    background-color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        padding: 15px;
+        height: auto; 
+        margin-top: 10px;
+    }
+
+    .login-form {
+        padding: 15px; 
+        max-width: 90%; 
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .error-message {
+        font-size: 12px; 
+        padding: 8px; 
+        margin-bottom: 10px; 
+        position: fixed;
+        top: 40%;
+        left: 35%; 
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form-container {
+        padding: 10px;
+        height: auto; 
+        margin-top: 8px;
+    }
+
+    .login-form {
+        padding: 10px; 
+        max-width: 100%; 
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem; 
+    }
+
+    .form-group input {
+        font-size: 13px; 
+        padding: 8px; 
+    }
+
+    .login-button {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .error-message {
+        font-size: 10px; 
+        padding: 6px; 
+        margin-bottom: 8px; 
+        position: fixed;
+        top: 30%;
+        left: 20%; 
+        max-width: 70%;
+    }
+}

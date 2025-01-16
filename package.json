@@ -1,0 +1,28 @@
+{
+  "name": "cs5610_project3_fall2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run backenddev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -ws --if-present",
+    "prod": "npm run start -w backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunlipeipei/Qiongrui-Liu-Lipeipei-Sun-project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "dependencies": {
+    "jwt-decode": "^4.0.0"
+  }
+}

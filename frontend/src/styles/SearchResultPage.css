@@ -1,0 +1,92 @@
+.search-results-page {
+    padding: 20px;
+}
+
+.search-results-page h1 {
+    font-size: 2rem; 
+    color: #333; 
+}
+  
+.results-list {
+    list-style: none;
+    padding: 0;
+}
+
+.result-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.result-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    background-color: #fffefe; 
+    border: 1px solid #ffcccc; 
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.close-error-button {
+    font-size: 10px;
+    background-color: #f5f5f5; 
+    color: #474747; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 5px;
+  }
+  
+.close-error-button:hover {
+    background-color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+    .search-results-page {
+        padding: 10px;
+    }
+
+    .search-results-page h1 {
+        font-size: 1.5rem; 
+    }
+  
+    .results-list {
+        font-size: 1rem; 
+    }
+
+    .result-link {
+        font-size: 1rem;
+        word-wrap: break-word; /* ensure long usernames wrap */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-results-page {
+        padding: 5px;
+    }
+
+    .search-results-page h1 {
+        font-size: 1.2rem; 
+    }
+
+    .results-list {
+        font-size: 0.9rem; 
+    }
+
+    .result-link {
+        font-size: 0.9rem;
+    }
+
+    .error-message {
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px; 
+    }
+}
