@@ -40,20 +40,20 @@ The app is built with the **MERN (MongoDB, Express.js, React, Node.js) stack** a
     npm install
     cd ../frontend
     npm install
-3.**Configure Environment Variables**
+3. **Configure Environment Variables**
     ```bash
     Create a .env file in backend/ and add:
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_secret_key
-4.**Start the Backend Server**
+4. **Start the Backend Server**
     ```bash
     cd backend
     npm run backendev
-5.**Start the Frontend Server**
+5. **Start the Frontend Server**
     ```bash
     cd frontend
     npm run dev
-6.**Launch the App**
+6. **Launch the App**
     ```bash
     Open http://localhost:8000 in your browser to access the application.
 
